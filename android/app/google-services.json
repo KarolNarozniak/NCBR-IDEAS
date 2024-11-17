@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "338894051424",
+    "project_id": "test-nq15yq",
+    "storage_bucket": "test-nq15yq.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:338894051424:android:540392bc0b89706598cb05",
+        "android_client_info": {
+          "package_name": "com.mycompany.scibridge"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZkNVmSJ3qO6f2eGMa-MFpltehB1k-38U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
