@@ -1,5 +1,6 @@
 import '/components/business_path_widget.dart';
 import '/components/investor_path_widget.dart';
+import '/components/profile_editor_widget.dart';
 import '/components/scientist_path_widget.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
@@ -267,17 +268,22 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                       Column(
                         mainAxisSize: MainAxisSize.max,
                         children: [
-                          if (FFAppState().businessvalue == true)
-                            wrapWithModel(
-                              model: _model.businessPathModel,
-                              updateCallback: () => safeSetState(() {}),
-                              child: const BusinessPathWidget(),
-                            ),
+                          wrapWithModel(
+                            model: _model.profileEditorModel,
+                            updateCallback: () => safeSetState(() {}),
+                            child: const ProfileEditorWidget(),
+                          ),
                           if (FFAppState().investorvalue == true)
                             wrapWithModel(
                               model: _model.investorPathModel,
                               updateCallback: () => safeSetState(() {}),
                               child: const InvestorPathWidget(),
+                            ),
+                          if (FFAppState().businessvalue == true)
+                            wrapWithModel(
+                              model: _model.businessPathModel,
+                              updateCallback: () => safeSetState(() {}),
+                              child: const BusinessPathWidget(),
                             ),
                           if (FFAppState().academicvalue == true)
                             wrapWithModel(
